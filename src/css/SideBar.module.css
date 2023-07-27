@@ -1,0 +1,21 @@
+
+.ul_box {
+    position: absolute;
+    height: 100%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    background-color: #0080ff;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.li_box {
+    list-style: none;
+    padding: 10px;
+}
+
+.li_box:hover {
+    background-color: #40a0ff;
+}
