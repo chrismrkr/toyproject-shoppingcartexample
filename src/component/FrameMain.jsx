@@ -8,19 +8,51 @@ const FrameMain = () => {
     const [pageNumber, setPageNumber] = useState();
     const [totalPage, setTotalPage] = useState();
 
-    const changeItemList = (items) => {
-        const newItemList = [];
-        items.forEach(item => {
-            newItemList.push(item);
+    const setNewItemList = (newItemList, newPageNumber, newTotalPage) => {
+        const tmpItemList = [];
+        newItemList.forEach(item => {
+            tmpItemList.push(item);
         });
-        setItemList(newItemList);
+        setItemList(tmpItemList);
+        setPageNumber(newPageNumber);
+        setTotalPage(newTotalPage);
     }
+    const changePage = async (param, e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        let nextPageNumber;
+        if(param == "next") {
+            // setNewPageNumber    
+            nextPageNumber = (pageNumber+1) % totalPage;
+        } else {
+            // setNewPageNumber
+            nextPageNumber = (totalPage + pageNumber - 1) % totalPage;
+        }
+        // 1. GET /items?page=newPageNumber
+        try {
+            let response = await fetch("http://localhost:8080/items?page="+(nextPageNumber), {"method":"GET"});
+            let jsonData = await response.json();
+            // 2. set newItemList, newPageNumber, newTotalPage      
+            const newItemList = jsonData.content;
+            const newTotalPage = jsonData.totalPages;
+            const newPageNumber = jsonData.number;
+            
+            // 2. setTotalPage
+            // 3. setItemList
+            setItemList(newItemList);
+            setPageNumber(newPageNumber);
+            setTotalPage(newTotalPage);
+        } catch(error) {
+            console.log(error);
+        }
+    }
+
 
     return (
         <div>
             <Header></Header>
-            <SideBar changeItemList={changeItemList}></SideBar>
-            <ContentsMain></ContentsMain>
+            <SideBar setNewItemList={setNewItemList}></SideBar>
+            <ContentsMain changePage={changePage} itemList={itemList} pageNumber={pageNumber} totalPage={totalPage}></ContentsMain>
         </div>
     );
 };
