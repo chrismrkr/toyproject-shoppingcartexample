@@ -19,9 +19,10 @@ const SideBar = (props) => {
         catch(error) {
             console.log("error 발생");
         }
+        props.selectTab("ITEM_LIST");
     };
     const getItemRegisterForm = () => {
-        alert("상품 등록 Form 가져오기 이벤트 발생");
+        props.selectTab("ITEM_REGISTER");
     };
 
     return (

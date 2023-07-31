@@ -7,7 +7,11 @@ const FrameMain = () => {
     const [itemList, setItemList] = useState([]);
     const [pageNumber, setPageNumber] = useState();
     const [totalPage, setTotalPage] = useState();
-
+    const [tabSelector, setTabSelector] = useState();
+    
+    const selectTab = (tabName) => {
+        setTabSelector(tabName);
+    };
     const setNewItemList = (newItemList, newPageNumber, newTotalPage) => {
         const tmpItemList = [];
         newItemList.forEach(item => {
@@ -47,12 +51,11 @@ const FrameMain = () => {
         }
     }
 
-
     return (
         <div>
             <Header></Header>
-            <SideBar setNewItemList={setNewItemList}></SideBar>
-            <ContentsMain changePage={changePage} itemList={itemList} pageNumber={pageNumber} totalPage={totalPage}></ContentsMain>
+            <SideBar selectTab={selectTab} setNewItemList={setNewItemList}></SideBar>
+            <ContentsMain changePage={changePage} itemList={itemList} pageNumber={pageNumber} totalPage={totalPage} tabSelector={tabSelector}></ContentsMain>
         </div>
     );
 };

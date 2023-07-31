@@ -1,0 +1,20 @@
+.div_box {
+    margin: 10px;
+
+}
+
+.div_text {
+    margin: 3px;
+}
+
+.div_error {
+    color : red;
+    font-size: 13px;
+    height: 20px;
+    margin : 3px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.div_button {
+    
+}
