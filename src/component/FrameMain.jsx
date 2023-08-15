@@ -40,7 +40,7 @@ const FrameMain = () => {
             const newItemList = jsonData.content;
             const newTotalPage = jsonData.totalPages;
             const newPageNumber = jsonData.number;
-            
+            debugger;
             // 2. setTotalPage
             // 3. setItemList
             setItemList(newItemList);

@@ -6,11 +6,17 @@ import ItemTable from './ItemTable';
 import ItemRegisterForm from './ItemRegisterForm';
 
 const ContentsMain = (props) => {
+    const [shoppingCart, setShoppingCart] = useState({});
+
+    const addItemInShoppingCart = (item) => {
+
+    };
+
     switch(props.tabSelector) {
         case "ITEM_LIST":
             return (
                 <div className={styles.div_box}>
-                    <ItemTable data={props.itemList}></ItemTable>
+                    <ItemTable data={props.itemList} addItemInShoppingCart={addItemInShoppingCart}></ItemTable>
                     <NavigationBar changePage={props.changePage} pageNumber={props.pageNumber} totalPage={props.totalPage}></NavigationBar>
                 </div>
             );
@@ -19,6 +25,13 @@ const ContentsMain = (props) => {
             return (
                 <div className={styles.div_box}>
                     <ItemRegisterForm></ItemRegisterForm>
+                </div>
+            );
+
+        case "SHOPPING_CART":
+            return (
+                <div className={styles.div_box}>
+
                 </div>
             );
 

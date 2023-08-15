@@ -24,13 +24,16 @@ const SideBar = (props) => {
     const getItemRegisterForm = () => {
         props.selectTab("ITEM_REGISTER");
     };
+    const getShoppingCartForm = () => {
+        props.selectTab("SHOPPING_CART");
+    }
 
     return (
         <div className={styles.div_box}>
             <ul className={styles.ul_box}>
                 <li onClick = {(e) => {loadItemList(e)}} className={styles.li_box}>상품 목록</li>
                 <li onClick = {getItemRegisterForm} className={styles.li_box}>상품 등록</li>
-                <li className={styles.li_box}>장바구니</li>
+                <li onClick = {getShoppingCartForm} className={styles.li_box}>장바구니</li>
             </ul>
         </div>
     );
