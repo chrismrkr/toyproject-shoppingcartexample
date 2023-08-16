@@ -1,0 +1,13 @@
+.selected_item_container {
+    display: block;
+    margin-top: 40px;
+    margin: 10px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    width: 250px;
+}
+
+.selected_item_component {
+    height: 30px;
+    width: 200px;
+}

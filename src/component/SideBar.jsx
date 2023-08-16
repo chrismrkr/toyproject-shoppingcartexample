@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import styles from '../css/SideBar.module.css';
 
 const SideBar = (props) => {
-
     const loadItemList = async (e) => {
         e.preventDefault();
         e.stopPropagation();

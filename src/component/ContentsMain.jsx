@@ -8,8 +8,10 @@ import ItemRegisterForm from './ItemRegisterForm';
 const ContentsMain = (props) => {
     const [shoppingCart, setShoppingCart] = useState({});
 
-    const addItemInShoppingCart = (item) => {
-
+    const addItemInShoppingCart = (shoppingCartItem) => {
+        shoppingCartItem.orderCount = parseInt(shoppingCartItem.orderCount);
+        shoppingCart[shoppingCartItem.itemName] = shoppingCartItem;    
+        setShoppingCart(shoppingCart);
     };
 
     switch(props.tabSelector) {
