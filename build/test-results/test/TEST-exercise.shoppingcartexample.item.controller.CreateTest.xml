@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="exercise.shoppingcartexample.item.controller.CreateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-31T16:30:54" hostname="DESKTOP-ADNV80S" time="0.554">
+  <properties/>
+  <testcase name="1. 생성 성공" classname="exercise.shoppingcartexample.item.controller.CreateTest" time="0.554"/>
+  <system-out><![CDATA[01:30:45.964 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+01:30:45.987 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+01:30:46.035 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [exercise.shoppingcartexample.item.controller.CreateTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+01:30:46.059 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [exercise.shoppingcartexample.item.controller.CreateTest], using SpringBootContextLoader
+01:30:46.067 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [exercise.shoppingcartexample.item.controller.CreateTest]: class path resource [exercise/shoppingcartexample/item/controller/CreateTest-context.xml] does not exist
+01:30:46.068 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [exercise.shoppingcartexample.item.controller.CreateTest]: class path resource [exercise/shoppingcartexample/item/controller/CreateTestContext.groovy] does not exist
+01:30:46.068 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [exercise.shoppingcartexample.item.controller.CreateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+01:30:46.070 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [exercise.shoppingcartexample.item.controller.CreateTest]: CreateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:30:46.159 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [exercise.shoppingcartexample.item.controller.CreateTest]
+01:30:46.242 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\b6350\intelliJProject\shoppingcartexample\build\classes\java\main\exercise\shoppingcartexample\ShoppingcartexampleApplication.class]
+01:30:46.244 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration exercise.shoppingcartexample.ShoppingcartexampleApplication for test class exercise.shoppingcartexample.item.controller.CreateTest
+01:30:46.403 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [exercise.shoppingcartexample.item.controller.CreateTest]: using defaults.
+01:30:46.404 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+01:30:46.437 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7b02e036, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@25243bc1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e287667, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e6ee0bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4201a617, org.springframework.test.context.support.DirtiesContextTestExecutionListener@467f77a5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1bb9aa43, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@420bc288, org.springframework.test.context.event.EventPublishingTestExecutionListener@df5f5c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@308a6984, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66b72664, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7a34b7b8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58cd06cb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3be8821f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@64b31700]
+01:30:46.443 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3d829787 testClass = CreateTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@71652c98 testClass = CreateTest, locations = '{}', classes = '{class exercise.shoppingcartexample.ShoppingcartexampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@41813449, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@62ea3440, [ImportsContextCustomizer@51bde877 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@76f7d241, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1bb1fde8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@26a4842b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7bf3a5d8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.14)
+
+2023-08-01 01:30:47.026  INFO 29608 --- [    Test worker] e.s.item.controller.CreateTest           : Starting CreateTest using Java 11.0.10 on DESKTOP-ADNV80S with PID 29608 (started by b6350 in C:\Users\b6350\intelliJProject\shoppingcartexample)
+2023-08-01 01:30:47.029  INFO 29608 --- [    Test worker] e.s.item.controller.CreateTest           : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 01:30:48.233  INFO 29608 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-01 01:30:48.333  INFO 29608 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-08-01 01:30:49.457  INFO 29608 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-01 01:30:49.560  INFO 29608 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-01 01:30:49.897  INFO 29608 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-01 01:30:50.117  INFO 29608 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-01 01:30:50.503  INFO 29608 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-01 01:30:50.554  INFO 29608 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+Hibernate: 
+    
+    drop table if exists item cascade
+2023-08-01 01:30:51.608  WARN 29608 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-08-01 01:30:51.608  WARN 29608 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : "item" 테이블 없음, 무시함
+Hibernate: 
+    
+    drop sequence if exists hibernate_sequence
+2023-08-01 01:30:51.610  WARN 29608 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-08-01 01:30:51.610  WARN 29608 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : "hibernate_sequence" 시퀀스 없음, 무시함
+Hibernate: create sequence hibernate_sequence start 1 increment 1
+Hibernate: 
+    
+    create table item (
+       item_id int8 not null,
+        delivery_type varchar(255),
+        item_name varchar(255),
+        item_price int4 not null,
+        item_quantity int4 not null,
+        primary key (item_id)
+    )
+2023-08-01 01:30:51.651  INFO 29608 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-01 01:30:51.676  INFO 29608 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-08-01 01:30:52.917  WARN 29608 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-01 01:30:53.932  INFO 29608 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-01 01:30:53.932  INFO 29608 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-01 01:30:53.934  INFO 29608 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-08-01 01:30:53.972  INFO 29608 --- [    Test worker] e.s.item.controller.CreateTest           : Started CreateTest in 7.463 seconds (JVM running for 10.149)
+Hibernate: 
+    select
+        nextval ('hibernate_sequence')
+Hibernate: 
+    insert 
+    into
+        item
+        (delivery_type, item_name, item_price, item_quantity, item_id) 
+    values
+        (?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /item
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"95"]
+             Body = { "itemName": "item1", "itemPrice": 10000, "itemQuantity": 30, "deliveryType": "QuickDelivery"}
+    Session Attrs = {}
+
+Handler:
+             Type = exercise.shoppingcartexample.controller.ItemController
+           Method = exercise.shoppingcartexample.controller.ItemController#createItem(ItemRequestDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":25,"itemName":"item1","itemPrice":10000,"itemQuantity":30,"deliveryType":"QuickDelivery"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-08-01 01:30:54.542  INFO 29608 --- [    Test worker] e.s.item.controller.CreateTest           : [result] : {"id":25,"itemName":"item1","itemPrice":10000,"itemQuantity":30,"deliveryType":"QuickDelivery"} 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
