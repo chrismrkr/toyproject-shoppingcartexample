@@ -26,7 +26,9 @@ Spring Framework 및 React 연습을 위해 상품 등록 조회 및 장바구�
 Frontend-Backend를 API 연동하면서 아래의 CORS 정책 위반 문제를 마주하였다.
 
 ```
-Access to fetch at 'http://localhost:8080/items?page=0' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled
+Access to fetch at 'http://localhost:8080/items?page=0' from origin 'http://localhost:3000' has been blocked by CORS policy:
+No 'Access-Control-Allow-Origin' header is present on the requested resource.
+If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled
 ```
 
 ### CORS 정책이란
