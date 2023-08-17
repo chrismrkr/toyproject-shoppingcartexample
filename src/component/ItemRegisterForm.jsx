@@ -68,8 +68,8 @@ const ItemRegisterForm = (props) => {
     
     return (
         <div>
-            <div class={styles.div_box}>
-                <div class={styles.div_text}>
+            <div className={styles.div_box}>
+                <div className={styles.div_text}>
                     분류    
                 </div>
                 <select value={deliveryType} onChange={(e)=>{changeDeliveryType(e)}}>
@@ -78,38 +78,38 @@ const ItemRegisterForm = (props) => {
                     <option value="MorningDelivery">Morning Delivery</option>
                     <option value="StandardDelivery">StandardDelivery</option>
                 </select>
-                <div class={styles.div_error}>
+                <div className={styles.div_error}>
                     {deliveryTypeError}
                 </div>
             </div>
-            <div class={styles.div_box}>
-                <div class={styles.div_text}>
+            <div className={styles.div_box}>
+                <div className={styles.div_text}>
                     상품명
                 </div>
                 <input type="text" value={itemName} onChange={(e)=>{changeItemName(e)}}></input>
-                <div class={styles.div_error}>
+                <div className={styles.div_error}>
                     {itemNameError}
                 </div>
             </div>
-            <div class={styles.div_box}>
-                <div class={styles.div_text}>
+            <div className={styles.div_box}>
+                <div className={styles.div_text}>
                     가격
                 </div>
                 <input type="text" value={itemPrice} onChange={(e)=>{changeItemPrice(e)}}></input>
-                <div class={styles.div_error}>
+                <div className={styles.div_error}>
                     {itemPriceError}
                 </div>
             </div>
-            <div class={styles.div_box}>
-                <div class={styles.div_text}>
+            <div className={styles.div_box}>
+                <div className={styles.div_text}>
                     수량
                 </div>
                 <input type="text" value={itemQuantity} onChange={(e)=>{changeItemQuantity(e)}}></input>
-                <div class={styles.div_error}>
+                <div className={styles.div_error}>
                     {itemQuantityError}
                 </div>
             </div>
-            <div class={styles.div_button}>
+            <div className={styles.div_button}>
                 <button onClick={(e)=>{postItem(e)}}>등록</button>
             </div>
         </div>

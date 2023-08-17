@@ -77,20 +77,20 @@ const ItemTable = (props) => {
         </table>
       </div>
 
-      <div class={styles.selected_item_container}>
-        <div class={styles.selected_item_component}>
+      <div className={styles.selected_item_container}>
+        <div className={styles.selected_item_component}>
           분류 {selectedDeliveryType}
         </div>
-        <div class={styles.selected_item_component}>
+        <div className={styles.selected_item_component}>
           상품명 {selectedItemName}
         </div>
-        <div class={styles.selected_item_component}>
+        <div className={styles.selected_item_component}>
           판매가 {selectedItemPrice}
         </div>
-        <div class={styles.selected_item_component}>
+        <div className={styles.selected_item_component}>
           재고 {selectedItemQuantity}
         </div>
-        <div class={styles.selected_item_component}>
+        <div className={styles.selected_item_component}>
           <input type="text" value={orderCount} onChange={(e)=>{changeOrderCount(e)}}placeholder='주문 수량을 입력하세요.'></input>
         </div>
         <button onClick={(e)=>{addToShoppingCart(e)}}>장바구니 담기</button>
