@@ -85,5 +85,11 @@ public class WebConfig implements WebMvcConfigurer {
 
 #### Webpack Dev Server로 리버스 프록싱하기
 
+클라이언트 서버에 일종의 프록시 서버를 생성하는 방법이다.
+
+클라이언트 프록시 서버의 매핑 룰에 의해 request-response 주소를 동일 출처로 변경하는 방법이다.
+
 ### 운영 환경에서 CORS 정책을 지키는 방법
 
++ API 서버에 Access-Control-Allow-Origin 설정
++ 리버스 프록시 서버 생성 : 클라이언트에서의 모든 request는 프록시서버가 받도록 하고, 적절한 경우에만 실제 API 서버에 요청을 하는 방식 
