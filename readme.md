@@ -46,8 +46,7 @@ CORS 정책을 이해하기 이전에 아래의 배경지식이 필요했다.
 
 웹 사이트에서 스크립트를 통해 CSRF, XSS 공격이 가능하다.
 
-+ CSRF 부연 설명 :
-+ XSS 부연 설명 :
++ CSRF, XSS 공격 부연 설명 : https://github.com/chrismrkr/WIL/blob/main/CS/computerNetwork.md#52-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88-%EC%A4%91%EC%9A%94-%EA%B0%9C%EB%85%90
 
 이를 막기 위해 같은 출처인지 다른 출처인지 구분하는 로직이 필요하게 되었다.
 
